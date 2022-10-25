@@ -18,7 +18,7 @@ class ParkingGarage():
         for i in list(self.active_tickets.keys()):
             if i == ticket_number:
                 pay_now = input("Ticket found, please pay now by entering payment type; Card or Cash: ")
-                if pay_now.lower() == 'Card'or'Cash':
+                if pay_now.title() == 'Card'or'Cash':
                     self.active_tickets[i] = "Paid"
                     print('Payment succesful, You have 15 minutes to Exit!')
 
